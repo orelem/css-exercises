@@ -5,6 +5,8 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 img {
@@ -16,6 +18,7 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 8px 16px;
 }
 
 input {
@@ -24,4 +27,56 @@ input {
   padding: 8px 24px;
   width: 400px;
   margin-bottom: 16px;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+/* HEADER */
+
+.header, .left-links, .right-links {
+  display: flex;
+  gap: 8px;
+  margin: 0;
+}
+
+.header {
+  justify-content: space-between;
+  padding: 12px;
+}
+
+/* BODY */
+
+.content {
+  display: flex;
+  flex-direction: column;
+  /* margin: auto; */ 
+  /* flex: 1; solution is Odin Project's and margin: auto; is mine */
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+/* FOOTER */
+
+.footer {
+  background-color: #eeeeee;
+  display: flex;
+  flex-direction: row;
+  margin-top: auto;
+  padding: 12px;
+}
+
+.footer .right-links {
+  margin-left: auto;
 }
