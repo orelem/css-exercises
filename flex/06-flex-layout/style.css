@@ -60,7 +60,7 @@ a {
 .content {
   display: flex;
   flex-direction: column;
-  /* margin: auto; */ 
+  /* margin: auto;  */
   /* flex: 1; solution is Odin Project's and margin: auto; is mine */
   flex: 1;
   align-items: center;
